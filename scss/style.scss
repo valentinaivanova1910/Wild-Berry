@@ -10,6 +10,15 @@ button {
   border: none;
   background: none;
 }
+.label{
+padding: 5px 12px;
+background: #3DC47E;
+border-radius: 3px;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
+border-radius: 3px;
+}
 .header{
     padding: 15px 0;
     background-color: #ffffff;
@@ -43,4 +52,37 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.slider{
+  position: relative;
+  padding: 90px 0 100px;
+  background: #B4D1E0 url('../img/image-064.png') no-repeat center right 15%/contain;
+
+&__title{
+font-family: 'Roboto Slab',sans-serif;
+font-weight: 700;
+font-size: 55px;
+line-height: 70px;
+color: #262D33;
+margin: 20px 0 15px;
+}
+&__desk{
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: #4B5157;
+max-width: 335px;
+margin-bottom: 40px;
+}
+&__nav{
+  position:absolute;
+  width: 100%;
+  top:50%;
+  transform: translateY(-50%);
+}
+&__span{
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;}
 }
