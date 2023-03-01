@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -16,11 +17,11 @@ button {
 
 .label {
   padding: 5px 12px;
-  background: #3DC47E;
+  background: #3dc47e;
   border-radius: 3px;
   font-size: 12px;
   line-height: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 3px;
 }
 
@@ -68,15 +69,15 @@ button {
 .slider {
   position: relative;
   padding: 90px 0 100px;
-  background: #B4D1E0 url("../img/image-064.png") no-repeat center right 15%/contain;
+  background: #b4d1e0 url("../img/image-064.png") no-repeat center right 15%/contain;
 }
 
 .slider__title {
-  font-family: 'Roboto Slab',sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   font-size: 55px;
   line-height: 70px;
-  color: #262D33;
+  color: #262d33;
   margin: 20px 0 15px;
 }
 
@@ -84,7 +85,7 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #4B5157;
+  color: #4b5157;
   max-width: 335px;
   margin-bottom: 40px;
 }
@@ -102,34 +103,146 @@ button {
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.card {
+  padding: 50px 0 60px;
+}
+
+.card__container {
+  margin-bottom: 30px;
 }
 
 .card__wrapper {
   padding: 60px 46px 80px;
   border-radius: 10px;
+  height: 100%;
 }
 
 .card__wrapper--1 {
-  background: url("../img/image-016.png") no-repeat center center/cover;
+  background: url("../img/image-1.png") no-repeat center center/cover;
+}
+
+.card__wrapper--2 {
+  background: url("../img/image-2.png") no-repeat center center/cover;
+}
+
+.card__wrapper--3 {
+  background: url("../img/image-3.png") no-repeat center center/cover;
+}
+
+.card__wrapper--4 {
+  background: url("../img/image-4.png") no-repeat center center/cover;
+}
+
+.card__wrapper--3 {
+  padding: 35px 46px 60px;
+}
+
+.card__wrapper--3 .label {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.card__wrapper--3 .card-title {
+  margin-bottom: 20px;
+}
+
+.card__wrapper--3 .card-text {
+  margin-bottom: 40px;
 }
 
 .card__title {
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #262D33;
+  color: #262d33;
   max-width: 220px;
   margin-bottom: 15px;
+}
+
+.card__title--white {
+  color: #ffffff;
 }
 
 .card__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Lato';
-  color: #4B5157;
+  font-family: "Lato";
+  color: #4b5157;
   max-width: 175px;
   margin-bottom: 25px;
+}
+
+.card__text--white {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card__text--pink {
+  color: #ffc4c9;
+}
+
+.card__price {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.goods__wrapper {
+  position: relative;
+  padding: 30px 36px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.goods__label {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 5px 12px;
+  background: #3dc47e;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.goods__img {
+  margin-bottom: 15px;
+}
+
+.goods__title {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262d33;
+  margin-bottom: 5px;
+}
+
+.goods__desk {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4b5157;
+  margin-bottom: 25px;
+}
+
+.goods__price {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 30px;
+  color: #262d33;
+  font-weight: 700;
 }
