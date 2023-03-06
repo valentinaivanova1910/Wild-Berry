@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid red;
 }
 
@@ -29,9 +30,26 @@ button {
   background-color: #ffffff;
 }
 
+@media (max-width: 600px) {
+  .nav {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+
 .nav__item {
   list-style-type: none;
 }
+
 .nav__link {
   text-decoration: none;
   font-weight: 900;
@@ -52,9 +70,15 @@ button {
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -63,6 +87,13 @@ button {
   padding: 90px 0 100px;
   background: #b4d1e0 url("../img/image-064.png") no-repeat center right 15%/contain;
 }
+
+@media (max-width: 600px) {
+  .slider {
+    padding: 30px 0;
+  }
+}
+
 .slider__title {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
@@ -71,6 +102,13 @@ button {
   color: #262d33;
   margin: 20px 0 15px;
 }
+
+@media (max-width: 600px) {
+  .slider__title {
+    font-size: 32px;
+  }
+}
+
 .slider__desk {
   font-weight: 400;
   font-size: 18px;
@@ -79,13 +117,27 @@ button {
   max-width: 335px;
   margin-bottom: 40px;
 }
+
+@media (max-width: 600px) {
+  .slider__desk {
+    font-size: 16px;
+  }
+}
+
 .slider__nav {
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   opacity: 0.5;
+  z-index: 10;
 }
+
+.slider__nav button {
+  cursor: pointer;
+}
+
 .slider__span {
   font-weight: 900;
   font-size: 14px;
@@ -96,39 +148,50 @@ button {
 .card {
   padding: 50px 0 60px;
 }
+
 .card__container {
   margin-bottom: 30px;
 }
+
 .card__wrapper {
   padding: 60px 46px 80px;
   border-radius: 10px;
   height: 100%;
 }
+
 .card__wrapper--1 {
   background: url("../img/image-1.png") no-repeat center center/cover;
 }
+
 .card__wrapper--2 {
   background: url("../img/image-2.png") no-repeat center center/cover;
 }
+
 .card__wrapper--3 {
   background: url("../img/image-3.png") no-repeat center center/cover;
 }
+
 .card__wrapper--4 {
   background: url("../img/image-4.png") no-repeat center center/cover;
 }
+
 .card__wrapper--3 {
   padding: 35px 46px 60px;
 }
+
 .card__wrapper--3 .label {
   margin-bottom: 30px;
   display: inline-block;
 }
+
 .card__wrapper--3 .card-title {
   margin-bottom: 20px;
 }
+
 .card__wrapper--3 .card-text {
   margin-bottom: 40px;
 }
+
 .card__title {
   font-family: "Roboto Slab";
   font-weight: 700;
@@ -138,9 +201,11 @@ button {
   max-width: 220px;
   margin-bottom: 15px;
 }
+
 .card__title--white {
   color: #ffffff;
 }
+
 .card__text {
   font-weight: 400;
   font-size: 14px;
@@ -150,12 +215,15 @@ button {
   max-width: 175px;
   margin-bottom: 25px;
 }
+
 .card__text--white {
   color: rgba(255, 255, 255, 0.85);
 }
+
 .card__text--pink {
   color: #ffc4c9;
 }
+
 .card__price {
   font-weight: 900;
   font-size: 14px;
@@ -166,29 +234,38 @@ button {
 .new {
   padding-bottom: 30px;
 }
+
 .new__title {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #262D33;
 }
+
 .new__desc {
   padding-top: 10px;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
   color: #262D33;
+  text-align: end;
 }
 
 .goods__wrapper {
   position: relative;
   padding: 30px 36px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
+
 .goods__label {
   position: absolute;
   top: 18px;
@@ -200,9 +277,11 @@ button {
   line-height: 15px;
   color: #ffffff;
 }
+
 .goods__img {
   margin-bottom: 15px;
 }
+
 .goods__title {
   font-family: "Roboto Slab";
   font-weight: 700;
@@ -211,6 +290,7 @@ button {
   color: #262d33;
   margin-bottom: 5px;
 }
+
 .goods__desk {
   font-family: "Lato";
   font-weight: 400;
@@ -219,6 +299,7 @@ button {
   color: #4b5157;
   margin-bottom: 25px;
 }
+
 .goods__price {
   font-family: "Lato";
   font-size: 18px;
@@ -232,12 +313,34 @@ button {
   padding: 45px 0 40px;
   margin-top: 70px;
 }
+
 .footer__list {
   list-style-type: none;
 }
+
+@media (max-width: 600px) {
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 980px) {
+  .footer__img {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
 .footer__item {
   list-style-type: none;
 }
+
 .footer__link {
   text-decoration: none;
   font-weight: 900;
@@ -246,20 +349,16 @@ button {
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
 .footer__icon {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #E7D9FF;
 }
-.footer .col-4 {
-  padding-top: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  gap: 25px;
-}
+
 .footer__line {
   background: #D8BFFF;
   margin-top: 45px;
@@ -272,7 +371,7 @@ button {
 .footer__icon--2 {
   padding-top: 35px;
   margin-right: 15px;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
@@ -281,4 +380,4 @@ button {
 
 .verh {
   padding-top: 25px;
-}/*# sourceMappingURL=style.css.map */
+}

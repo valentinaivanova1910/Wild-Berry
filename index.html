@@ -13,20 +13,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-2">
+          <div class="col-6 col-lg-2 order-1">
             <a class="logo" href="/">
               <img class="logo__img" src="img/logo.svg" alt="logo" />
             </a>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-lg-6 order-3 order-lg-2">
             <nav class="nav">
-              <ul class="nav__list d-flex justify-content-between">
+              <ul class="nav__list d-flex justify-content-between align-items-center">
                 <li class="nav__item">
                   <a class="nav__link" href="">Womens</a>
                 </li>
@@ -48,7 +52,7 @@
               </ul>
             </nav>
           </div>
-          <div class="col-2 d-flex justify-content-end">
+          <div class="col-6 col-lg-2 order-2 order-lg-3 d-flex justify-content-end">
             <button class="button">
               <img src="img/Cart.svg" alt="" />
               <span>Cart</span>
@@ -57,32 +61,56 @@
         </div>
       </div>
     </header>
-    <section class="slider">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 offset-1">
-            <span class="label">Bestseller</span>
-            <h1 class="slider__title">Sweater Choker Neck</h1>
-            <p class="slider__desk">
-              Women’s pearl basic knit sweater with a round neck. Available in
-              several colours. Free shipping to stores.
-            </p>
-            <button class="button">
-              <span>$319</span>
-              <span>Shop now</span>
-            </button>
+
+    <section class="slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider__item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 offset-md-1">
+                <span class="label">Bestseller</span>
+                <h1 class="slider__title">Sweater Choker Neck</h1>
+                <p class="slider__desk">
+                  Women’s pearl basic knit sweater with a round neck. Available
+                  in several colours. Free shipping to stores.
+                </p>
+                <button class="button">
+                  <span>$319</span>
+                  <span>Shop now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__item">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 offset-1">
+                <span class="label">slider 1</span>
+                <h1 class="slider__title">Sweater Choker Neck</h1>
+                <p class="slider__desk">
+                  Women’s pearl basic knit sweater with a round neck. Available
+                  in several colours. Free shipping to stores.
+                </p>
+                <button class="button">
+                  <span>$319</span>
+                  <span>Shop now</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="slider__nav">
+
+      <div class="slider__nav d-none d-md-block">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-1">
+            <button class="col-1 slider-button-prev">
               <img src="img/prev.svg" alt="" />
-            </div>
-            <div class="col-1">
+            </button>
+            <button class="col-1 slider-button-next">
               <img src="img/next.svg" alt="" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -90,7 +118,7 @@
     <section class="card">
       <div class="container">
         <div class="row card__container">
-          <div class="col-6">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
             <div class="card__wrapper card__wrapper--1">
               <h3 class="card__title">Fashion Month Ready in Capital Shop</h3>
               <p class="card__text">
@@ -102,7 +130,7 @@
               </button>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
             <div class="card__wrapper card__wrapper--2">
               <h3 class="card__title card__title--white">
                 Catch the Sun: Spring Break Styles From $5.99
@@ -118,7 +146,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-9">
+          <div class="col-12 col-md-6 col-lg-9">
             <div class="card__wrapper card__wrapper--3">
               <span class="label">Bestseller</span>
               <h3 class="card__title">Poplin Top With Sleeve Bow</h3>
@@ -131,7 +159,7 @@
               </button>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card__wrapper card__wrapper--4">
               <h3 class="card__title card__title--white">
                 Printed Shirt with a Bow
@@ -143,14 +171,14 @@
         </div>
       </div>
     </section>
-   
+
     <section class="new">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-2">
+          <div class="col-6">
             <h1 class="new__title">New Arrival</h1>
           </div>
-          <div class="col-1">
+          <div class="col-6">
             <p class="new__desc">View All</p>
           </div>
         </div>
@@ -159,37 +187,39 @@
     <section class="goods">
       <div class="container">
         <div class="row">
-          <div class="col-3">
-            <div class="goods__wrapper goods__wrapper">
-            <span class="goods__label">New</span>
-            <img class="gooda__img" src="img/cofta1.png" alt="">
-            <h2 class="goods__title">Embroidered Hoodie</h2>
-            <p class="goods__desk">Yellow/Lilac/Fuchsia/Orange </p>
-            <span class="goods__price">$89</span>
-          </div>
-        </div>
-          <div class="col-3"> 
-            <div class="goods__wrapper goods__wrapper">
-            <span class="goods__label">New</span>
-            <img class="gooda__img" src="img/Image (1).png" alt="">
-            <h2 class="goods__title">Faded Beach Trousers</h2>
-            <p class="goods__desk">Navy/Ochre/Black/Khaki </p>
-            <span class="goods__price">$139</span>
-          </div></div>
-          <div class="col-3">
-             <div class="goods__wrapper goods__wrapper">
-            <span class="goods__label">New</span>
-            <img class="gooda__img" src="img/Image (2).png" alt="">
-            <h2 class="goods__title">Text T-Shirt</h2>
-            <p class="goods__desk">White </p>
-            <span class="goods__price">$59</span>
-          </div></div>
-          <div class="col-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="goods__wrapper goods__wrapper">
               <span class="goods__label">New</span>
-              <img class="gooda__img" src="img/Image (3).png" alt="">
+              <img class="gooda__img" src="img/cofta1.png" alt="" />
+              <h2 class="goods__title">Embroidered Hoodie</h2>
+              <p class="goods__desk">Yellow/Lilac/Fuchsia/Orange</p>
+              <span class="goods__price">$89</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="goods__wrapper goods__wrapper">
+              <span class="goods__label">New</span>
+              <img class="gooda__img" src="img/Image (1).png" alt="" />
+              <h2 class="goods__title">Faded Beach Trousers</h2>
+              <p class="goods__desk">Navy/Ochre/Black/Khaki</p>
+              <span class="goods__price">$139</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="goods__wrapper goods__wrapper">
+              <span class="goods__label">New</span>
+              <img class="gooda__img" src="img/Image (2).png" alt="" />
+              <h2 class="goods__title">Text T-Shirt</h2>
+              <p class="goods__desk">White</p>
+              <span class="goods__price">$59</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="goods__wrapper goods__wrapper">
+              <span class="goods__label">New</span>
+              <img class="gooda__img" src="img/Image (3).png" alt="" />
               <h2 class="goods__title">Striped Long Sleeve Shirt</h2>
-              <p class="goods__desk">Red/Sky Blue </p>
+              <p class="goods__desk">Red/Sky Blue</p>
               <span class="goods__price">$119</span>
             </div>
           </div>
@@ -199,63 +229,63 @@
     <footer class="footer">
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-5">
-          
-              <ul class="footer__list d-flex justify-content-between list-style-type-none">
-                <li class="footer____item">
-                  <a class="footer__link" href="">Shop</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">About Us</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Careers</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">FAQ</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Blog</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Contacts</a>
-                </li>
-              </ul>
-           
+          <div class="col-12 col-lg-6 mb-4 mt-md-0">
+            <ul class="footer__list d-flex justify-content-between list-style-type-none"
+            >
+              <li class="footer____item">
+                <a class="footer__link" href="">Shop</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Contacts</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-2 d-flex justify-content-between">
+          <div class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end mb-4 mt-md-0 ">
             <span class="footer__icon">Follow Us</span>
             <img src="img/Facebook.svg" alt="" />
             <img src="img/Twitter.svg" alt="" />
             <img src="img/Instagram.svg" alt="" />
           </div>
 
-          <div class="col-2 d-flex justify-content-end">
-              <span class="footer__icon">© 2019 Universal UI Kit</span>
+          <div class="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-end">
+            <span class="footer__icon">© 2019 Universal UI Kit</span>
           </div>
         </div>
-     
-      <div class="row">
-        <div class="col-12">
-           <div class="footer__line"></div>
-        </div>
-     </div>
-     <div class="row d-flex justify-content-between p-t-40px">
-      <div class="col-4 d-flex justify-content-start">
-        <img class="footer__img" src="img/viza.svg" alt="" />
-        <img class="footer__img" src="img/Logo (2).svg" alt="" />
-        <img class="footer__img" src="img/Logo (3).svg" alt="" />
-        <img class="footer__img" src="img/Logo (4).svg" alt="" />
-      </div>
-  
-      <div class="col-2 d-flex justify-content-end">
-          <span class="footer__icon--2">Top</span>
-          <img class="verh" src ="img/Round with small icon.png" alt="" />
-      </div>
-    </div>
 
-    
-    </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__line"></div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-between p-t-40px">
+          <div class=" col-12 col-lg-4 d-flex justify-content-start mt-4 mt-md-0">
+            <img class="footer__img" src="img/viza.svg" alt="" />
+            <img class="footer__img" src="img/Logo (2).svg" alt="" />
+            <img class="footer__img" src="img/Logo (3).svg" alt="" />
+            <img class="footer__img" src="img/Logo (4).svg" alt="" />
+          </div>
+
+          <div class=" col-12 col-lg-2 d-flex justify-content-end mb-4 mt-md-0">
+            <span class="footer__icon--2">Top</span>
+            <img class="verh" src="img/Round with small icon.png" alt="" />
+          </div>
+        </div>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
